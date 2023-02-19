@@ -1,0 +1,425 @@
+* {
+    margin: auto;
+}
+
+/* Foot  */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300;500&family=Work+Sans:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* ---------------header style start------------ */
+header {
+    background-color: antiquewhite;
+    width: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 25px;
+}
+
+.nav-title {
+    font-size: 45px;
+}
+
+ul {
+    display: flex;
+}
+
+ul>li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.banner-info {
+    width: 100%;
+    text-align: center;
+    padding: 25px 25px;
+}
+
+.banner-title {
+    font-size: 64px;
+    margin-bottom: 15px;
+}
+
+.banner-des {
+    margin-top: 15px;
+    color: #727272;
+    margin: 32px 0;
+}
+
+.btn {
+    width: 180px;
+    height: 64px;
+    background-color: orange;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+}
+
+.banner-img {
+    width: 50%;
+    padding: 20px 10px;
+    margin-left: 500px;
+}
+
+/* ---------------header style close--------------- */
+
+/* --------- responsive for mobile device---------------- */
+
+@media only screen and (max-width:688px) {
+
+    header {
+        width: 100%;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner-info {
+        width: 100%;
+        padding: 0px 0px;
+    }
+
+    .banner-img {
+        width: 80%;
+        margin-left: 40px;
+    }
+}
+
+
+
+/* -------------------responsive part 1 close------------- */
+main {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* --------------feature section styles start------------ */
+
+
+
+.feature-section {
+    display: flex;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.feature-title {
+    font-size: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.feature-des {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.sp-1 {
+    color: dimgray;
+
+}
+
+.sp-2 {
+    font-weight: bolder;
+}
+
+.sp-3 {
+    color: orange;
+
+}
+
+
+.feature-imgs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    border-radius: 8px;
+}
+
+/* --------------feature section styles close------------ */
+
+/* --------------------responsive for mobile device----------------------------- */
+
+@media only screen and (max-width:688px) {
+    .feature-section {
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .feature-imgs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+}
+
+/* -------------feature details style start---------- */
+
+
+.feature-details {
+    display: flex;
+
+}
+
+.feature-title-2 {
+    font-size: 30px;
+    border-left: 2px solid orange;
+    padding: 10px;
+
+}
+
+.boxes {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 10px;
+    width: 100%;
+
+
+
+}
+
+.box {
+    width: 500px;
+    height: 80px;
+    border: grey;
+    background-color: #ffffff;
+    padding: 30px;
+    gap: 10px;
+    box-shadow: 2px 1px 5px lightslategrey;
+
+}
+
+.box-title {
+    margin-top: 5px;
+}
+
+.box-details {
+    margin-top: 5px;
+}
+
+.architect-img {
+    width: 35%;
+    height: 700px;
+}
+
+.feature-btn {
+    height: 120px;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: orange;
+    color: antiquewhite;
+    border-radius: 5px;
+    border: none;
+    padding: 20px;
+    margin-left: -630px;
+    margin-top: 700px;
+
+}
+
+/* -----------feature detailss styles close--------- */
+
+/* -------responsive for mobile device--------- */
+
+@media only screen and (max-width:688px) {
+    .feature-details {
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .architect-img {
+        width: 500px;
+        height: 500px;
+    }
+
+    .feature-btn {
+        width: 100%;
+        margin-left: 50px;
+        margin-top: -600px;
+    }
+
+}
+
+
+/* ---facts part style start------ */
+
+.fact-info {
+    margin-top: 100px;
+
+}
+
+.fact-title {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.fact-details {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.fact-boxes {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.fact-box {
+    border: 2px solid orange;
+    padding: 20px;
+}
+
+.fact-box:hover {
+    transform: rotate(30deg);
+}
+
+/* ---facts part style close------ */
+
+/* -------------responsive for mobile device-------- */
+
+@media only screen and (max-width: 688px) {
+    .fact-boxes {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+/* --------sponsor part style start------ */
+.sponsor-info {
+    margin-bottom: 200px;
+}
+
+.sponsor-des {
+    margin-top: 200px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.sponsor-title {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.sponsor-details {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.sponsor-boxes {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+/* --------sponsor part style close------ */
+
+/* -------------responsive for mobile device-------- */
+
+@media only screen and (max-width: 688px) {
+    .sponsor-boxes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+}
+
+/* bonus part atart */
+
+.social-media {
+    align-items: center;
+}
+
+.send-title {
+    text-align: center;
+    font-size: 30px;
+    border: 1px solid black;
+    box-shadow: 3px 3px 5px lightblue;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.send-title:hover {
+    transform: scale(2) ease 5s;
+    background-color: orange;
+}
+
+form {
+    padding: 5px;
+    margin-left: 600px;
+    margin-bottom: 20px;
+}
+
+.email-btn {
+    background-color: darkgray;
+    border-radius: 3px;
+    padding: 10px;
+    border: none;
+}
+
+/* bonus part close */
+
+/* -------------responsive for mobile device-------- */
+
+@media only screen and (max-width: 688px) {
+    .mail-sec {
+        width: 300px;
+        font-size: 10px;
+    }
+
+    .form {
+        display: inline;
+    }
+
+    .email-btn {
+        display: block;
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+
+}
+
+
+/* ----footer part style start------- */
+footer {
+    height: 50px;
+    padding-top: 25px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 100px;
+    background-color: rgb(230, 217, 201);
+    text-align: center;
+}
+
+/* ----footer part style close------- */
+
+/* /* -------------responsive for mobile device--------  */
+@media only screen and (max-width: 688px) {
+    footer {
+        width: 50%;
+        margin-top: 100px;
+    }
+
+}
